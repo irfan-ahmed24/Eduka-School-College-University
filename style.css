@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  margin-top: 63px;
+  height: 150vh;
+}
+/*navbar 1 start*/
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #262626;
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  font-weight: bolder;
+}
+header .btn-1 {
+  background-color: rgb(3, 196, 3);
+  color: rgb(255, 255, 255);
+  margin: 0 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+header .btn-1:hover {
+  background-color: rgb(2, 177, 2);
+}
+/*navbar 2 start*/
+main .navbar-2 {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  background-color: rgb(98, 105, 202);
+}
+main .navbar-2 .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fda31b;
+  padding: 0 auto;
+  color: white;
+}
+main .navbar-2 .contact ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .navbar-2 .contact ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #116e63;
+  transition: all 0.3s;
+}
+main .navbar-2 .contact ul li a:hover {
+  color: rgb(241, 145, 20);
+}
+main .navbar-2 .address {
+  background-color: #116e63;
+}
+main .navbar-2 .address ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  padding: 1rem;
+}
+main .navbar-2 .address ul li a {
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+}
+main .navbar-2 .address ul li a i {
+  color: rgb(241, 145, 20);
+  margin-right: 5px;
+}
+main .navbar-3 {
+  position: sticky;
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  align-content: center;
+  top: 63px;
+  background-color: rgb(255, 255, 255);
+}
+main .navbar-3 .logo {
+  text-align: right;
+  margin-top: 1rem;
+}
+main .navbar-3 .nav-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+main .navbar-3 .nav-menu ul .meno {
+  position: relative;
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+main .navbar-3 .nav-menu ul .meno:hover .submenu {
+  display: block;
+}
+main .navbar-3 .nav-menu ul .meno:hover a {
+  color: #116e63;
+}
+main .navbar-3 .nav-menu ul .meno a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 10px;
+  font-weight: bolder;
+  color: #000;
+}
+main .navbar-3 .nav-menu ul .meno a i {
+  margin: 5px;
+}
+.apply {
+  background-color: #fda31b;
+  padding: 1rem 1.5rem;
+  color: white;
+  border-radius: 50px 50px 50px 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.apply:hover {
+  background: radial-gradient(circle, rgb(27, 18, 4) 0%, rgb(17, 17, 16) 100%);
+}
+.apply a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: white;
+}
+/*sub menu start*/
+.submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 100%;
+  left: -30px;
+  background-color: #116e63;
+  transition: all 0.3s;
+}
+.submenu ul {
+  display: flex;
+  flex-direction: column;
+}
+.submenu ul li {
+  margin: 0;
+}
+#meno-effect {
+  padding: 1rem;
+}
+#meno-effect a {
+  color: white;
+  text-decoration: none;
+}
+/*main-section start*/
+.main-section {
+  background-color: #262626;
+}
