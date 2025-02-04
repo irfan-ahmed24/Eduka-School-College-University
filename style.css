@@ -99,36 +99,39 @@ main .navbar-3 {
   top: 63px;
   background-color: rgb(255, 255, 255);
 }
+main .navbar-3 .menu-icon {
+  display: none;
+}
 main .navbar-3 .logo {
   text-align: right;
   margin-top: 1rem;
 }
-main .navbar-3 .nav-menu ul {
+main .navbar-3 .nav-menu .main-menu {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
 }
-main .navbar-3 .nav-menu ul .meno {
+main .navbar-3 .nav-menu .main-menu .meno {
   position: relative;
   padding: 1.5rem 0;
   cursor: pointer;
 }
-main .navbar-3 .nav-menu ul .meno:hover .submenu {
-  display: block;
-}
-main .navbar-3 .nav-menu ul .meno:hover a {
+main .navbar-3 .nav-menu .main-menu .meno:hover a {
   color: #116e63;
 }
-main .navbar-3 .nav-menu ul .meno a {
+main .navbar-3 .nav-menu .main-menu .meno a {
   text-decoration: none;
   font-size: 1.1rem;
   margin: 10px;
   font-weight: bolder;
   color: #000;
 }
-main .navbar-3 .nav-menu ul .meno a i {
+main .navbar-3 .nav-menu .main-menu .meno a i {
   margin: 5px;
+}
+.meno-icon {
+  display: none;
 }
 .apply {
   background-color: #fda31b;
@@ -139,7 +142,7 @@ main .navbar-3 .nav-menu ul .meno a i {
   transition: all 0.3s;
 }
 .apply:hover {
-  background: radial-gradient(circle, rgb(27, 18, 4) 0%, rgb(17, 17, 16) 100%);
+  background: #116e63;
 }
 .apply a {
   text-decoration: none;
@@ -154,8 +157,27 @@ main .navbar-3 .nav-menu ul .meno a i {
   width: 200px;
   top: 100%;
   left: -30px;
+  border-top: 3px solid #fda31b;
   background-color: #116e63;
   transition: all 0.3s;
+}
+main .navbar-3 .nav-menu ul .meno:hover .submenu {
+  display: block;
+  animation: anim 0.5s;
+}
+@keyframes anim {
+  0% {
+    opacity: 0;
+    top: 80%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+  }
+  100% {
+    opacity: 1;
+    top: 100%;
+    transform: rotateX(0deg);
+    transform-origin: 0% 0%;
+  }
 }
 .submenu ul {
   display: flex;
@@ -163,13 +185,25 @@ main .navbar-3 .nav-menu ul .meno a i {
 }
 .submenu ul li {
   margin: 0;
+  list-style: none;
 }
 #meno-effect {
-  padding: 1rem;
+  padding: 0.1rem 0.5rem;
+  transition: all 0.5s;
 }
 #meno-effect a {
   color: white;
+  display: flex;
+  justify-content: space-between;
   text-decoration: none;
+  transition: all 0.5s;
+}
+#meno-effect:hover a {
+  color: #fda31b;
+}
+#meno-effect:hover {
+  color: #fda31b;
+  transform: translateX(5px);
 }
 /*main-section start*/
 .main-section {
