@@ -101,6 +101,11 @@ main .navbar-3 {
 }
 main .navbar-3 .menu-icon {
   display: none;
+  font-size: 1.2rem;
+}
+main .navbar-3 .menu-icon i {
+  cursor: pointer;
+  margin: 10px;
 }
 main .navbar-3 .logo {
   text-align: right;
@@ -160,6 +165,9 @@ main .navbar-3 .nav-menu .main-menu .meno a i {
   border-top: 3px solid #fda31b;
   background-color: #116e63;
   transition: all 0.3s;
+}
+.Academics {
+  position: static;
 }
 main .navbar-3 .nav-menu ul .meno:hover .submenu {
   display: block;
