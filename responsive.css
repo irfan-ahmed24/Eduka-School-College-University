@@ -11,17 +11,20 @@
     display: flex;
     justify-content: center;
   }
+  main .navbar-3 .nav-3 {
+    width: 85%;
+  }
   .mobile-meno {
     display: flex;
-    flex-wrap: inherit;
-    width: 80%;
-    align-items: center;
+    width: 100%;
     justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
   }
   main .navbar-3 .logo {
     margin-top: 0rem;
   }
-  main .navbar-3 .menu-icon {
+  main .navbar-3 .nav-3 .menu-icon {
     display: block;
   }
   main .navbar-3 {

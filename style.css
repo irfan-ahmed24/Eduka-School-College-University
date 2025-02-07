@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*common section*/
+.search {
+  color: #000;
+}
+#icon {
+  font-size: 1.2rem;
+  margin: 1rem;
+  cursor: pointer;
+}
 main {
   margin-top: 63px;
   height: 150vh;
@@ -100,23 +109,66 @@ main .navbar-3 {
   flex-wrap: inherit;
   top: 63px;
   background-color: rgb(255, 255, 255);
+  transition: all 0.3s;
 }
 main .navbar-3 .nav-3 {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s;
+}
+main .navbar-3 .nav-3 .menu-icon {
+  display: none;
 }
 main .navbar-3 .nav-3 .main-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 5rem;
+  margin-left: 4rem;
 }
+main .navbar-3 .nav-3 .main-menu .logo {
+  margin-left: 0;
+}
+
 main .navbar-3 .nav-3 .main-menu .meno {
   position: relative;
   list-style: none;
   margin-right: 22px;
-  padding: 1rem 0;
+  padding: 2rem 0;
+}
+.Academics {
+  position: static;
+  list-style: none;
+  margin-right: 22px;
+  padding: 2rem 0;
+}
+.Academics a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+.Academics-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  border-top: 3px solid #fda31b;
+  background-color: #116e63;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+.Academics-menu div p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 2rem;
+  color: white;
+}
+.Academics-menu h2 {
+  color: #fda31b;
+  margin-bottom: 1.5rem;
 }
 .apply {
   position: relative;
@@ -125,7 +177,13 @@ main .navbar-3 .nav-3 .main-menu .meno {
   padding: 1rem 1.5rem;
   border-radius: 50px 50px 50px 0;
   margin: 1rem 0;
+
   background-color: #fda31b;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.apply:hover {
+  background-color: #116e63;
 }
 .apply a {
   text-decoration: none;
@@ -151,11 +209,14 @@ main .navbar-3 .nav-3 .main-menu .meno a {
   background-color: #116e63;
   transition: all 0.3s;
 }
-.Academics {
-  position: static;
-}
 main .navbar-3 .nav-menu ul .meno:hover .submenu {
   display: block;
+  animation: anim 0.5s;
+}
+main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
   animation: anim 0.5s;
 }
 @keyframes anim {
@@ -176,27 +237,43 @@ main .navbar-3 .nav-menu ul .meno:hover .submenu {
   display: flex;
   flex-direction: column;
 }
-.submenu li {
-  margin: 0;
-  list-style: none;
+.submenu-hover {
+  position: relative;
+}
+.submenu-2 #meno-effect a {
+  color: white;
+}
+.submenu-2 {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 0;
+  left: 100%;
+  border-top: 3px solid #fda31b;
+  background-color: #116e63;
+  transition: all 0.3s;
+}
+.submenu-hover:hover .submenu-2 {
+  display: block;
 }
 #meno-effect {
+  margin: 0;
+  list-style: none;
   padding: 1rem;
+  border-top: #12887a 1px solid;
   transition: all 0.5s;
+  cursor: pointer;
 }
 #meno-effect a {
   color: white;
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 #meno-effect:hover a {
   color: #fda31b;
-}
-#meno-effect:hover {
-  color: #fda31b;
-  transform: translateX(5px);
+  transform: translateX(10px);
 }
 /*main-section start*/
 .main-section {
