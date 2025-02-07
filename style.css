@@ -93,68 +93,53 @@ main .navbar-2 .address ul li a i {
 }
 main .navbar-3 {
   position: sticky;
-  display: grid;
-  grid-template-columns: 2fr 8fr;
   align-content: center;
-  top: 63px;
-  background-color: rgb(255, 255, 255);
-}
-main .navbar-3 .menu-icon {
-  display: none;
-  font-size: 1.2rem;
-}
-main .navbar-3 .menu-icon i {
-  cursor: pointer;
-  margin: 10px;
-}
-main .navbar-3 .logo {
-  text-align: right;
-  margin-top: 1rem;
-}
-main .navbar-3 .nav-menu .main-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
+  flex-wrap: inherit;
+  top: 63px;
+  background-color: rgb(255, 255, 255);
 }
-main .navbar-3 .nav-menu .main-menu .meno {
+main .navbar-3 .nav-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .navbar-3 .nav-3 .main-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5rem;
+}
+main .navbar-3 .nav-3 .main-menu .meno {
   position: relative;
-  padding: 1.5rem 0;
-  cursor: pointer;
-}
-main .navbar-3 .nav-menu .main-menu .meno:hover a {
-  color: #116e63;
-}
-main .navbar-3 .nav-menu .main-menu .meno a {
-  text-decoration: none;
-  font-size: 1.1rem;
-  margin: 10px;
-  font-weight: bolder;
-  color: #000;
-}
-main .navbar-3 .nav-menu .main-menu .meno a i {
-  margin: 5px;
-}
-.meno-icon {
-  display: none;
+  list-style: none;
+  margin-right: 22px;
+  padding: 1rem 0;
 }
 .apply {
-  background-color: #fda31b;
+  position: relative;
+  list-style: none;
+  margin-right: 22px;
   padding: 1rem 1.5rem;
-  color: white;
-  border-radius: 50px 50px 50px 0px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.apply:hover {
-  background: #116e63;
+  border-radius: 50px 50px 50px 0;
+  margin: 1rem 0;
+  background-color: #fda31b;
 }
 .apply a {
   text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bolder;
   color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s;
 }
+main .navbar-3 .nav-3 .main-menu .meno a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  color: black;
+}
+
 /*sub menu start*/
 .submenu {
   display: none;
@@ -191,12 +176,12 @@ main .navbar-3 .nav-menu ul .meno:hover .submenu {
   display: flex;
   flex-direction: column;
 }
-.submenu ul li {
+.submenu li {
   margin: 0;
   list-style: none;
 }
 #meno-effect {
-  padding: 0.1rem 0.5rem;
+  padding: 1rem;
   transition: all 0.5s;
 }
 #meno-effect a {
