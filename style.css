@@ -177,7 +177,6 @@ main .navbar-3 .nav-3 .main-menu .meno {
   padding: 1rem 1.5rem;
   border-radius: 50px 50px 50px 0;
   margin: 1rem 0;
-
   background-color: #fda31b;
   cursor: pointer;
   transition: all 0.3s;
@@ -269,14 +268,18 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 }
 .submenu-2 ul li {
   list-style: none;
+  padding: 0.5rem;
 }
 .submenu-2 ul li #submeno-element {
   list-style: none;
   color: white;
   text-decoration: none;
-  padding: 1rem;
   display: block;
   transition: all 0.3s;
+}
+.submenu-2 ul li #submeno-element:hover {
+  color: #fda31b;
+  transform: scale(0.9);
 }
 .submenu-hover:hover .submenu-2 {
   display: block;
@@ -284,7 +287,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 #meno-effect {
   margin: 0;
   list-style: none;
-  padding: 1rem;
+  padding: 0.6rem 1rem;
   border-top: #12887a 1px solid;
   transition: all 0.5s;
   cursor: pointer;
@@ -295,9 +298,6 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   justify-content: space-between;
   text-decoration: none;
   transition: all 0.3s;
-}
-#submeno-effect a {
-  color: white;
 }
 #meno-effect:hover a {
   color: #fda31b;
