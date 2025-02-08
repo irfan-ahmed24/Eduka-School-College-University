@@ -251,6 +251,31 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   left: 100%;
   border-top: 3px solid #fda31b;
   background-color: #116e63;
+  animation: submeno-anim 0.5s;
+}
+@keyframes submeno-anim {
+  0% {
+    opacity: 0;
+    top: 0%;
+    transform: rotateX(-75deg);
+    transform-origin: 120% 120%;
+  }
+  100% {
+    opacity: 1;
+    top: 0%;
+    transform: rotateX(0deg);
+    transform-origin: 120% 120%;
+  }
+}
+.submenu-2 ul li {
+  list-style: none;
+}
+.submenu-2 ul li #submeno-element {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
   transition: all 0.3s;
 }
 .submenu-hover:hover .submenu-2 {
@@ -270,6 +295,9 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   justify-content: space-between;
   text-decoration: none;
   transition: all 0.3s;
+}
+#submeno-effect a {
+  color: white;
 }
 #meno-effect:hover a {
   color: #fda31b;
