@@ -179,16 +179,52 @@ main .navbar-3 .nav-3 .main-menu .meno {
   margin: 1rem 0;
   background-color: #fda31b;
   cursor: pointer;
-  transition: all 0.3s;
+  overflow: hidden;
 }
-.apply:hover {
+
+.apply::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
   background-color: #116e63;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
+  z-index: 1;
 }
+
+.apply:hover::before {
+  width: 300px;
+  height: 300px;
+}
+#btn-2 {
+  background-color: rgb(255, 255, 255);
+}
+#btn-2 a {
+  color: black;
+}
+#btn-2:hover a {
+  color: white;
+}
+
 .apply a {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
-  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
+}
+#primary-btn-2 {
+  background-color: white;
+}
+#primary-btn-2 a {
+  color: black;
+}
+#primary-btn-2:hover a {
+  color: white;
 }
 main .navbar-3 .nav-3 .main-menu .meno a {
   text-decoration: none;
@@ -439,8 +475,184 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 .feature-desc p {
   font-size: 1.2rem;
 }
-/*about section start*/
 
+/*about-area start*/
+.about-area {
+  display: flex;
+  width: 100%;
+  padding: 120px 0;
+  justify-content: center;
+}
+.area-container {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/*about-image start*/
+.about-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+.image-left {
+  padding: 1rem;
+}
+.image-left img {
+  border-radius: 90px 90px 0 90px;
+}
+
+.image-right {
+  justify-items: center;
+  align-items: center;
+}
+.about-experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #fda31b;
+  border-radius: 40px 40px 40px 0;
+}
+.about-experience img {
+  background-color: white;
+  border-radius: 50%;
+}
+.about-experience p {
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+.image-right {
+  padding: 1rem;
+}
+.image-right .img-2 {
+  border: #fda31b 2px dashed;
+  padding: 10px;
+  border-radius: 50%;
+}
+.image-right .img-3 {
+  border-radius: 0 90px 90px 90px;
+}
+
+/*about-right start*/
+.about-right {
+  padding: 3rem 0;
+}
+.site-title-tagline {
+  width: fit-content;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: #fda31b 2px solid;
+  text-transform: uppercase;
+  color: #fda31b;
+}
+.about-right h2 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: black;
+}
+.about-right h2 span {
+  color: #fda31b;
+}
+.about-right .about-text {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: black;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+.about-contant {
+  margin: 1rem 0;
+}
+.both-site {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  border-bottom: rgb(255, 255, 255, 0.5) 1px solid;
+}
+.about-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.about-item-icon {
+  border-radius: 50%;
+  background-color: #fda31b;
+  padding: 10px;
+}
+.about-item-icon img {
+  filter: brightness(0) invert(1);
+}
+.about-item-content {
+  margin-left: 0.5rem;
+}
+.about-item-content h5 {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.about-item-content p {
+  font-size: 1.2rem;
+  color: black;
+  opacity: 0.8;
+}
+.right-site {
+  margin: 1rem 2rem;
+  position: relative;
+}
+.about-quote {
+  background-color: #e9e0d2;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+.about-quote p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  opacity: 0.8;
+}
+.about-quote i {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 2rem;
+}
+.about-btn {
+  display: flex;
+  margin-top: 1rem;
+}
+.about-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+.about-phone .icon i {
+  padding: 10px;
+  background-color: #116e63;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.number {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+.number span {
+  color: #fda31b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.number a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+}
 /*.feature-area {
   background-image: url("./pic/slider-2.jpg");
   height: 100vh;
