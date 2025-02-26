@@ -811,3 +811,24 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 .course-details {
   padding: 1rem;
 }
+/*------------lesson ---------------*/
+.lasson {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 20px;
+  opacity: 0.6;
+}
+.course-details h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.course-details .course-para {
+  font-size: 1.1rem;
+  border-bottom: #000 1px solid;
+  padding-bottom: 1rem;
+  opacity: 0.8;
+  font-family: Arial, Helvetica, sans-serif;
+}
