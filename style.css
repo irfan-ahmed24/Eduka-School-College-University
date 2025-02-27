@@ -807,6 +807,38 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 }
 .course-image img {
   border-radius: 50px 50px 50px 0;
+  transition: all 0.5s;
+}
+.course-image {
+  position: relative;
+}
+/*------------link animation ---------------*/
+.link-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(3);
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fda31b;
+  color: white;
+  padding: 18px;
+  border-radius: 50%;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 1;
+}
+.link-icon:hover {
+  background-color: white;
+  color: #fda31b;
+}
+.course-image:hover .link-icon {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+.course-image:hover img {
+  filter: brightness(0.5);
 }
 .course-details {
   padding: 1rem;
@@ -827,8 +859,26 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 }
 .course-details .course-para {
   font-size: 1.1rem;
-  border-bottom: #000 1px solid;
+  border-bottom: rgb(175, 172, 172, 0.5) 1px solid;
   padding-bottom: 1rem;
   opacity: 0.8;
   font-family: Arial, Helvetica, sans-serif;
+}
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1rem;
+}
+.course-footer p {
+  opacity: 0.6;
+  font-size: 1.1rem;
+}
+.course-footer span {
+  padding: 6px 12px;
+  color: white;
+  background-color: #fda31b;
+  border-radius: 50px 50px 50px 0;
 }
