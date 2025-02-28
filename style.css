@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*common section*/
+/*-----------------------common section----------------------*/
 .search {
   color: #000;
 }
@@ -15,7 +15,7 @@
 main {
   margin-top: 63px;
 }
-/*navbar 1 start*/
+/*-----------------------navbar 1 start---------------------*/
 header {
   display: flex;
   justify-content: space-between;
@@ -48,7 +48,7 @@ header .btn-1 {
 header .btn-1:hover {
   background-color: rgb(2, 177, 2);
 }
-/*navbar 2 start*/
+/*----------------------navbar 2 start---------------------*/
 main .navbar-2 {
   display: grid;
   grid-template-columns: 2fr 5fr;
@@ -108,6 +108,7 @@ main .navbar-3 {
   flex-wrap: inherit;
   top: 63px;
   background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: all 0.3s;
   z-index: 10;
 }
@@ -233,7 +234,7 @@ main .navbar-3 .nav-3 .main-menu .meno a {
   color: black;
 }
 
-/*sub menu start*/
+/*------------------sub menu start--------------------*/
 .submenu {
   display: none;
   position: absolute;
@@ -339,7 +340,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   color: #fda31b;
   transform: translateX(10px);
 }
-/*main-section start*/
+/*---------------------main-section start----------------------*/
 
 .owl-item {
   padding: 4rem;
@@ -415,7 +416,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   }
 }
 
-/*feature-area start*/
+/*-----------feature-area start----------------*/
 .feature-area {
   width: 100%;
   display: flex;
@@ -453,17 +454,10 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   background-color: #116e63;
   border-radius: 50%;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
 }
 .feature-item:hover .feature-icon {
-  animation: rotate 0.4s linear;
-}
-@keyframes rotate {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
+  transform: rotateY(360deg);
 }
 .feature-icon img {
   filter: brightness(0) invert(1);
@@ -476,7 +470,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   font-size: 1.2rem;
 }
 
-/*about-area start*/
+/*----------------------about-area start------------------------*/
 .about-area {
   display: flex;
   width: 100%;
@@ -490,7 +484,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   gap: 1rem;
 }
 
-/*about-image start*/
+/*-------------------about-image start-----------------------*/
 .about-image {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -537,7 +531,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   border-radius: 0 90px 90px 90px;
 }
 
-/*about-right start*/
+/*--------------about-right start----------------------*/
 .about-right {
   padding: 3rem 0;
 }
@@ -653,7 +647,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   font-size: 1.2rem;
   color: black;
 }
-/*counter-area start*/
+/*-------------counter-area start----------------*/
 .counter-area {
   background-image: url("./pic/slider-3.jpg");
   background-size: cover;
@@ -733,9 +727,9 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   margin-top: 1rem;
   color: white;
 }
-/*Course-area start*/
+/*---------------------------Course-area start----------------------*/
 .Course-area {
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 .course-container {
   display: flex;
@@ -791,7 +785,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 .course-item {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 1rem 5rem;
+  padding: 1rem 4rem;
 }
 .items {
   padding: 1rem;
@@ -828,16 +822,32 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   cursor: pointer;
   z-index: 1;
 }
+.course-image span {
+  position: absolute;
+  right: -10px;
+  top: 1rem;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 50px 50px 50px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #fda31b;
+  z-index: 2;
+}
+.course-image span i {
+  font-size: 1rem;
+  margin-right: 5px;
+}
 .link-icon:hover {
   background-color: white;
   color: #fda31b;
 }
-.course-image:hover .link-icon {
+.item:hover .link-icon {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, -50%) scale(1);
 }
-.course-image:hover img {
+.item:hover img {
   filter: brightness(0.5);
 }
 .course-details {
@@ -873,12 +883,75 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   margin-top: 1rem;
 }
 .course-footer p {
-  opacity: 0.6;
+  opacity: 0.8;
   font-size: 1.1rem;
+}
+.course-footer p i {
+  color: #fda31b;
 }
 .course-footer span {
   padding: 6px 12px;
   color: white;
   background-color: #fda31b;
   border-radius: 50px 50px 50px 0;
+}
+/*---------------------------video-aera-------------------*/
+.video-aera {
+  margin: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+/*---------------------------video-details-------------------*/
+.video-details {
+  padding-left: 1rem;
+}
+.video-details h3 {
+  color: #fda31b;
+  width: fit-content;
+  border-bottom: #fda31b 2px solid;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.video-details h1 {
+  font-size: 55px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: normal;
+}
+.video-details p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  opacity: 0.6;
+  line-height: 2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.video-details .apply {
+  width: fit-content;
+}
+/*---------------------------video-------------------*/
+.video {
+  margin-left: 1rem;
+  height: 350px;
+  width: 776px;
+}
+.video-image {
+  background: url("./pic/video-image.jpg") no-repeat center/cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 50px 50px 50px 0;
+  position: relative;
+}
+.video-image a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-image a i {
+  color: white;
+  background-color: #fda31b;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  text-decoration: none;
 }
