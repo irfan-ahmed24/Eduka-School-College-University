@@ -982,3 +982,47 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 .teacher-details p {
   opacity: 0.8;
 }
+
+/*----------------------------teacher-contact-------------------*/
+.teacher-contact {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 1.5rem;
+  right: -2rem;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.teacher:hover .teacher-contact {
+  opacity: 1;
+  transform: translateX(-80%);
+}
+.teacher-contact i {
+  padding: 0.7rem;
+  background-color: #fda31b;
+  color: white;
+  border-radius: 50% 50% 50% 0;
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.teacher-contact i:hover {
+  background-color: #116e63;
+}
+/*------------------------why choose area start--------------------------*/
+.choose-area {
+  position: relative;
+  background: #012758;
+  z-index: 1;
+}
+.choose-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./pic/background.png") no-repeat center/cover;
+  opacity: 0.08;
+  z-index: -1;
+}
