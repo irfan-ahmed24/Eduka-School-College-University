@@ -936,7 +936,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 }
 /*----------------------------teacher-area-------------------*/
 .teacher-area {
-  padding: 4rem;
+  padding: 5rem;
 }
 .teacher-title-area {
   display: flex;
@@ -1014,6 +1014,9 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   position: relative;
   background: #012758;
   z-index: 1;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
 }
 .choose-area::before {
   content: "";
@@ -1025,4 +1028,83 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   background: url("./pic/background.png") no-repeat center/cover;
   opacity: 0.08;
   z-index: -1;
+}
+.choose-details {
+  padding-right: 5.5rem;
+}
+.choose-details .head-title,
+.choose-details .desc {
+  color: white;
+  opacity: 1;
+}
+.choose-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+/*-----------------------choose item -------------------------*/
+.choose-item {
+  display: flex;
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-radius: 50px 50px 50px 0;
+  overflow: hidden;
+}
+.choose-item-pic {
+  background-color: #fda31b;
+  padding: 1rem;
+  border-radius: 50% 50% 50% 0;
+  margin-left: -12px;
+}
+.choose-item img {
+  filter: brightness(0) invert(1);
+}
+.item-desc {
+  padding: 0 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.item-desc p {
+  opacity: 0.8;
+  margin-top: 0.5rem;
+  line-height: 1.8rem;
+}
+/*-----------------------choose-pic -------------------------*/
+.choose-pic img {
+  border-radius: 30% 0 30% 30%;
+  position: relative;
+}
+.choose-pic {
+  position: relative;
+}
+.choose-pic:before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  width: 100%;
+  height: 100%;
+  border: #fda31b 5px solid;
+  border-radius: 30% 0 30% 30%;
+  z-index: 1;
+}
+/*-----------------------Galary-area -------------------------*/
+.Galary-area {
+  padding: 5rem;
+}
+.Galary-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Galary-title {
+  width: 50%;
+  text-align: center;
+}
+.Galary {
+  background-color: #fda31b;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
