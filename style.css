@@ -15,6 +15,7 @@
 main {
   margin-top: 63px;
 }
+/*----------common title----------*/
 .title {
   color: #fda31b;
   width: fit-content;
@@ -39,6 +40,17 @@ main {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*-------------common primary btn--------------*/
+#primary-btn-2 {
+  background-color: white;
+}
+#primary-btn-2 a {
+  color: black;
+  transition: all 0.5s;
+}
+#primary-btn-2:hover a {
+  color: white;
+}
 /*-----------------------navbar 1 start---------------------*/
 header {
   display: flex;
@@ -225,15 +237,6 @@ main .navbar-3 .nav-3 .main-menu .meno {
   width: 300px;
   height: 300px;
 }
-#btn-2 {
-  background-color: rgb(255, 255, 255);
-}
-#btn-2 a {
-  color: black;
-}
-#btn-2:hover a {
-  color: white;
-}
 
 .apply a {
   text-decoration: none;
@@ -242,15 +245,7 @@ main .navbar-3 .nav-3 .main-menu .meno {
   position: relative;
   z-index: 1;
 }
-#primary-btn-2 {
-  background-color: white;
-}
-#primary-btn-2 a {
-  color: black;
-}
-#primary-btn-2:hover a {
-  color: white;
-}
+
 main .navbar-3 .nav-3 .main-menu .meno a {
   text-decoration: none;
   font-size: 1.2rem;
@@ -410,20 +405,6 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
-}
-.btn-primary-1 {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-}
-.btn-primary-2 {
-  color: rgb(3, 3, 3);
-  background-color: #ffffff;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-.btn-primary-2:hover {
-  color: #ffffff;
 }
 @keyframes change {
   0% {
@@ -1132,32 +1113,74 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   bottom: 10px;
   border-radius: 50px 50px 50px 0;
   opacity: 0.8;
-
   transition: all 0.3s;
-  z-index: 1;
 }
 .Photo:hover .photo-content::before {
   background-color: #fda31b;
 }
-.photo-content a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  opacity: 0;
+.photo-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo-content i {
   color: white;
-  z-index: 2;
-  visibility: hidden;
+  transform: scale(0);
+  opacity: 0;
+  cursor: pointer;
   transition: all 0.5s;
 }
-.Photo:hover .photo-content a {
-  visibility: visible;
-  transform: scale(1.5) translate(-50%, -50%);
+.Photo:hover .photo-content i {
+  transform: scale(3);
+  z-index: 2;
   opacity: 1;
 }
+
 .Photo img {
   width: 100%;
   height: 100%;
   border-radius: 50px 50px 50px 0;
+}
+/*-----------------------offer-area -------------------------*/
+.offer-area {
+  margin-top: 4rem;
+  padding: 0 5rem;
+  background: url(./pic/offer-BG.jpg) no-repeat center/cover;
+}
+.offer-container {
+  display: flex;
+  justify-content: right;
+}
+.offer {
+  width: 40%;
+  background-color: #fda31b;
+  position: relative;
+  padding: 80px 40px;
+  border-radius: 80px 80px 80px 0;
+  margin-top: -40px;
+}
+
+.offer::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: white 8px double;
+  border-radius: 80px 80px 80px 0;
+}
+.offer h1 {
+  font-size: 40px;
+  color: white;
+}
+.offer p {
+  color: white;
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2rem;
+  margin: 1rem 0;
+}
+.offer .apply {
+  width: fit-content;
 }
