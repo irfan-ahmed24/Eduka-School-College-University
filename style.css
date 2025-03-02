@@ -1091,7 +1091,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 }
 /*-----------------------Galary-area -------------------------*/
 .Galary-area {
-  padding: 5rem;
+  padding: 4rem;
 }
 .Galary-details {
   display: flex;
@@ -1103,8 +1103,61 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   text-align: center;
 }
 .Galary {
-  background-color: #fda31b;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+}
+.Galary-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Photo {
+  position: relative;
+  margin: 1rem;
+}
+.photo-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.photo-content::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50px 50px 50px 0;
+  opacity: 0.8;
+
+  transition: all 0.3s;
+  z-index: 1;
+}
+.Photo:hover .photo-content::before {
+  background-color: #fda31b;
+}
+.photo-content a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  opacity: 0;
+  color: white;
+  z-index: 2;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.Photo:hover .photo-content a {
+  visibility: visible;
+  transform: scale(1.5) translate(-50%, -50%);
+  opacity: 1;
+}
+.Photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px 50px 50px 0;
 }
