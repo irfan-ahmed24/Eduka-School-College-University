@@ -144,7 +144,7 @@ main .navbar-3 {
   flex-wrap: inherit;
   top: 63px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
   z-index: 10;
 }
@@ -209,6 +209,7 @@ main .navbar-3 .nav-3 .main-menu .meno {
 }
 .apply {
   position: relative;
+  width: fit-content;
   list-style: none;
   margin-right: 22px;
   padding: 1rem 1.5rem;
@@ -1186,7 +1187,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 }
 /*-----------------------upcoming-event---------------*/
 .upcoming-event-area {
-  padding: 5rem;
+  padding: 5rem 5rem 10rem 5rem;
   background-color: #f2f3f5;
 }
 .upcoming-details {
@@ -1221,3 +1222,139 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 .event:hover img {
   transform: scale(1.1);
 }
+
+/*--------------------enrooll area-------------------*/
+.enroll-area {
+  position: relative;
+  padding: 5rem;
+  background: url(./pic/enroll-bg.jpg) no-repeat center/cover;
+  z-index: 1;
+}
+.enroll-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #012758;
+  opacity: 0.8;
+  z-index: -1;
+}
+.enroll-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.enrollment-form {
+  width: 45%;
+  background-color: #ffffff;
+  border-radius: 50px 50px 50px 0;
+}
+.form-title {
+  background-color: #fda31b;
+  padding: 20px 30px;
+  margin-top: -1rem;
+  border-radius: 50px 50px 50px 0;
+  color: white;
+}
+
+.form {
+  padding: 30px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group input,
+.form-select,
+textarea {
+  font-size: 16px;
+  padding: 16px 22px;
+  border-radius: 16px;
+  color: #6c757d;
+  background-color: #f2f3f5;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.form-group textarea {
+  max-width: 100%;
+}
+/*--------------------skill area-------------------*/
+.skills {
+  width: 50%;
+}
+.skills-title p {
+  color: white;
+  opacity: 1;
+}
+.progress-bar div {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+
+.progress-bar div::before {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  border-radius: 10px;
+  z-index: -1;
+}
+.progress-bar div::after {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  width: 0;
+  height: 10px;
+  background-color: #fda31b;
+  border-radius: 10px;
+  z-index: -1;
+  transition: all 0.5s;
+}
+@keyframes progress1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes progress2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes progress3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.progress-bar .progress-1::after {
+  animation: progress1 2s forwards;
+}
+.progress-bar .progress-2::after {
+  animation: progress2 2s forwards;
+}
+.progress-bar .progress-3::after {
+  animation: progress3 2s forwards;
+}
+
+/*-----------------------depertment-area start-------------------*/
