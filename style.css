@@ -1284,6 +1284,9 @@ textarea {
 .skills {
   width: 50%;
 }
+.skills-title h1 {
+  color: white;
+}
 .skills-title p {
   color: white;
   opacity: 1;
@@ -1358,3 +1361,96 @@ textarea {
 }
 
 /*-----------------------depertment-area start-------------------*/
+.department-area {
+  padding: 5rem;
+  background-color: #f2f3f5;
+}
+.department-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.department-title {
+  width: 50%;
+  text-align: center;
+}
+/*----------------------- testimonial-area start-------------------*/
+.testimonial-area {
+  position: relative;
+  padding: 5rem;
+  background: url(./pic/testimonial-bg.jpg) no-repeat center/cover;
+  z-index: 1;
+}
+.testimonial-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #012758;
+  opacity: 0.8;
+  z-index: -1;
+}
+.testimonial-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-title {
+  width: 50%;
+  text-align: center;
+}
+.testimonial-title h1,
+.testimonial-title p {
+  color: white;
+  opacity: 1;
+}
+/*----------------------- Our blog-area start-------------------*/
+.Blog-area {
+  padding: 5rem;
+}
+.Blog-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Blog-title {
+  width: 50%;
+  text-align: center;
+}
+.blog-post {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.blog-item {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50px 50px 50px 0;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2), -1px -1px 20px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+}
+.blog-item span {
+  position: absolute;
+  top: 30px;
+  right: -5px;
+  padding: 10px;
+  background-color: #fda31b;
+  color: white;
+  border-radius: 50px 50px 50px 0;
+  z-index: 1;
+}
+.blog-image {
+  overflow: hidden;
+  border-radius: 50px 50px 50px 0;
+}
+
+.blog-image img {
+  width: 336px;
+  height: 224px;
+  transition: all 0.5s;
+}
+.blog-image img:hover {
+  transform: scale(1.1);
+}
