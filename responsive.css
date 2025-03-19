@@ -29,27 +29,72 @@
     display: none;
     justify-content: left;
     width: 100%;
-    height: 40vh;
     overflow: scroll;
-    transition: all 0.3s;
+    scroll-behavior: smooth;
+    animation: navanimation 0.3s forwards;
   }
   main .navbar-3 .hide-nav-meno {
     display: block;
+    transition: all 0.3s;
+  }
+  @keyframes navanimation {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 35vh;
+    }
   }
   main .navbar-3 .nav-3 .main-menu {
     display: flex;
     flex-direction: column;
+    margin-left: 1rem;
   }
   main .navbar-3 .nav-3 .main-menu .meno {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin-right: 22px;
     padding: 10px 0;
+  }
+  main .navbar-3 .nav-3 .main-menu .meno a {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
   }
   .Academics {
     width: 100%;
     padding: 10px 0;
+  }
+  .Academics a {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .submenu {
+    position: relative;
+    display: none;
+    width: 90%;
+    top: 100%;
+    left: 30px;
+    border-top: none;
+    background-color: #ffffff;
+    transition: all 0.3s;
+  }
+  .mobile-submeno {
+    display: block;
+  }
+  main .navbar-3 .nav-menu ul .meno:hover .submenu {
+    display: block;
+    animation: none;
+  }
+  #meno-effect {
+    border-top: none;
+  }
+  #meno-effect a {
+    color: rgb(0, 0, 0);
   }
   main .navbar-3 .logo {
     margin-top: 0rem;
