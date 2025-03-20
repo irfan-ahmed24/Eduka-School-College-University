@@ -1,6 +1,14 @@
 @media screen and (max-width: 1200px) {
-  .apply {
+  .nav-3 .apply {
     display: none;
+  }
+  .feature-area {
+    flex-direction: row;
+    padding: 0 1rem;
+  }
+  .feature-wraping {
+    width: 100%;
+    margin-top: -50px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -60,18 +68,59 @@
   main .navbar-3 .nav-3 .main-menu .meno a {
     display: flex;
     flex-direction: row;
+    padding: 5px;
+    border-radius: 10px;
     width: 100%;
     justify-content: space-between;
+  }
+  main .navbar-3 .nav-3 .main-menu .meno a:hover {
+    color: black;
+    background-color: rgb(71, 63, 63, 0.1);
+    transform: none;
   }
   .Academics {
     width: 100%;
     padding: 10px 0;
   }
+  .Academics-menu {
+    display: none;
+    position: relative;
+    width: 90%;
+    top: 0;
+    left: 0;
+    border-top: none;
+    border: #757272 1px solid;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 1rem;
+    transition: all 0.3s;
+  }
+  .Academics-menu img {
+    display: none;
+  }
+  main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .Academics-menu h2 {
+    color: black;
+  }
+  .Academics-menu div p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+    color: rgb(0, 0, 0);
+  }
   .Academics a {
     display: flex;
     flex-direction: row;
     width: 100%;
+    padding: 5px;
+    border-radius: 10px;
     justify-content: space-between;
+  }
+  .Academics a:hover {
+    background-color: rgb(71, 63, 63, 0.1);
   }
   .submenu {
     position: relative;
@@ -81,6 +130,8 @@
     left: 30px;
     border-top: none;
     background-color: #ffffff;
+    border: #757272 1px solid;
+    border-radius: 20px;
     transition: all 0.3s;
   }
   .mobile-submeno {
@@ -88,13 +139,43 @@
   }
   main .navbar-3 .nav-menu ul .meno:hover .submenu {
     display: block;
-    animation: none;
   }
   #meno-effect {
     border-top: none;
   }
+
   #meno-effect a {
     color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #meno-effect:hover a {
+    color: black;
+    transform: none;
+  }
+  .submenu-2 {
+    display: none;
+    position: relative;
+    width: 90%;
+    top: 0;
+    left: 10px;
+    border-top: none;
+    border: #757272 1px solid;
+    border-radius: 20px;
+    background-color: #ffffff;
+    animation: none;
+  }
+  .submenu-2 ul li #submeno-element {
+    list-style: none;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+  }
+  .submenu-2 ul li #submeno-element:hover {
+    color: black;
+    background-color: rgb(71, 63, 63, 0.1);
+    transform: none;
   }
   main .navbar-3 .logo {
     margin-top: 0rem;
@@ -105,8 +186,37 @@
   main .navbar-3 {
     grid-template-columns: 1fr 1fr;
   }
+  .search-meno {
+    display: none;
+  }
+  /*---------------------main-section start----------------------*/
+  .owl-item .hero-content {
+    width: 100%;
+  }
+  .owl-item .hero-content h6 {
+    font-size: 1.3rem;
+  }
+  .owl-item .hero-content h1 {
+    font-size: 3rem;
+  }
+  /*-----------feature-area start----------------*/
+
+  .feature-wraping {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -50px;
+  }
 }
 @media screen and (max-width: 768px) {
+  main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
+    grid-template-columns: 1fr;
+  }
+  .owl-item .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .feature-wraping {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (max-width: 520px) {
 }

@@ -432,11 +432,11 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: -150px;
   gap: 1rem;
 }
 .feature-item {
   background-color: #ffffff;
-  margin-top: -150px;
   z-index: 1;
   padding: 1.5rem;
   border-radius: 50px 50px 50px 0;
