@@ -363,7 +363,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 /*---------------------main-section start----------------------*/
 
 .owl-item {
-  padding: 4rem;
+  padding: 5rem;
   margin: 0 auto;
   width: 100%;
   height: 110vh;
@@ -480,17 +480,21 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 .about-area {
   display: flex;
   width: 100%;
-  padding: 120px 0 40px 0;
+  padding: 3rem;
   justify-content: center;
 }
 .area-container {
-  width: 95%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-
 /*-------------------about-image start-----------------------*/
+.about-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .about-image {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -498,6 +502,18 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 }
 .image-left {
   padding: 1rem;
+}
+.image-left .img-1 {
+  height: 399px;
+  width: 266px;
+}
+.image-right .img-2 {
+  height: 266px;
+  width: 266px;
+}
+.image-right .img-3 {
+  height: 319px;
+  width: 266px;
 }
 .image-left img {
   border-radius: 90px 90px 0 90px;
@@ -735,7 +751,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 }
 /*---------------------------Course-area start----------------------*/
 .Course-area {
-  padding: 3rem 0;
+  padding: 5rem;
 }
 .course-container {
   display: flex;
@@ -765,11 +781,9 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 .course-item {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 1rem 4rem;
+  gap: 1rem;
 }
-.items {
-  padding: 1rem;
-}
+
 .item {
   display: flex;
   flex-direction: column;
@@ -780,6 +794,8 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   padding: 1rem 0;
 }
 .course-image img {
+  height: 220px;
+  width: 330px;
   border-radius: 50px 50px 50px 0;
   transition: all 0.5s;
 }
