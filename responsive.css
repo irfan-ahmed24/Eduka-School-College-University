@@ -73,6 +73,44 @@
     height: 175px;
     width: 260px;
   }
+  /*---------------------------video-aera-------------------*/
+  .video-aera {
+    margin: 3rem 4rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .video {
+    margin-left: 0;
+    height: 350px;
+    width: 615px;
+  }
+  /*----------------------------teacher-area-------------------*/
+  .teacher-area {
+    padding: 4rem;
+  }
+  .teacher-image img {
+    height: 228px;
+    width: 186px;
+    border-radius: 50px 50px 50px 0;
+  }
+  /*------------------------why choose area start--------------------------*/
+  .choose-area {
+    padding: 4rem;
+    flex-direction: column;
+  }
+  .choose-pic {
+    margin-top: 2rem;
+  }
+  .choose-pic img {
+    height: 755px;
+    width: 686px;
+  }
+  /*-----------------------Galary-area -------------------------*/
+  .Galary-area {
+    padding: 3rem;
+  }
+  .offer-area {
+    padding: 0 4rem;
+  }
 }
 @media screen and (max-width: 992px) {
   main .navbar-2 {
@@ -309,6 +347,9 @@
     margin: 1rem 0;
   }
   /*---------------------------Course-area start----------------------*/
+  .course-title {
+    width: 80%;
+  }
   .Course-area {
     padding: 2rem 6rem;
   }
@@ -319,10 +360,55 @@
     height: 220px;
     width: 330px;
   }
+  /*---------------------------video-aera-------------------*/
+  .video-aera {
+    margin: 3rem 6rem;
+    grid-template-columns: 1fr;
+  }
+  /*----------------------------teacher-area-------------------*/
+  .teacher-area {
+    padding: 3rem 6rem;
+  }
+  .teacher-image img {
+    height: 378px;
+    width: 306px;
+  }
+  .All-Teachers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  /*------------------------why choose area start--------------------------*/
+  .choose-area {
+    padding: 3rem 6rem;
+    flex-direction: column;
+  }
+  .choose-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .choose-pic {
+    margin-top: 2rem;
+  }
+  .choose-pic img {
+    height: 557px;
+    width: 506px;
+  }
+  .Galary-area {
+    padding: 5rem;
+  }
+  .Galary-title {
+    width: 100%;
+  }
+  .offer-area {
+    padding: 0 6rem;
+  }
+  .offer {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .owl-item {
-    padding: 4rem 5rem;
+    padding: 4rem 6rem;
   }
   main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
     grid-template-columns: 1fr;
@@ -335,7 +421,7 @@
   }
   /*-------------------about-image start-----------------------*/
   .about-area {
-    padding: 5rem;
+    padding: 6rem;
   }
   .about-image {
     grid-template-columns: 1fr;
@@ -362,12 +448,102 @@
   .counter-area-container {
     grid-template-columns: 1fr;
   }
+  .Course-area {
+    padding: 2rem 6rem;
+  }
+  .course-item {
+    grid-template-columns: 1fr;
+  }
+  .course-image img {
+    height: 317px;
+    width: 476px;
+  }
+  /*---------------------------video-aera-------------------*/
+  .video-aera {
+    margin: 3rem 6rem;
+    grid-template-columns: 1fr;
+  }
+  .video {
+    height: 250px;
+    width: 516px;
+  }
+  .teacher-area {
+    padding: 3rem 6rem;
+  }
+  .teacher-title {
+    width: 100%;
+  }
+  .teacher-image img {
+    height: 500px;
+    width: 400px;
+  }
+  .All-Teachers {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .choose-area {
+    padding: 6rem;
+    flex-direction: column;
+  }
+  .choose-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .choose-pic {
+    margin-top: 2rem;
+  }
+  .choose-pic img {
+    height: 485px;
+    width: 438px;
+  }
+  .Galary-area {
+    padding: 5rem;
+  }
+  .Galary-title {
+    padding: 1rem 2rem;
+  }
+  .Galary {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 @media screen and (max-width: 520px) {
   .owl-item {
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
   }
   .about-area {
-    padding: 2rem;
+    padding: 1rem;
+  }
+  .Course-area {
+    padding: 1rem;
+  }
+  .course-image img {
+    height: 264px;
+    width: 396px;
+  }
+  .video-aera {
+    margin: 3rem 1rem;
+    grid-template-columns: 1fr;
+  }
+  .video {
+    height: 200px;
+    width: 416px;
+  }
+  .teacher-area {
+    padding: 3rem 1rem;
+  }
+  .teacher-image img {
+    height: 500px;
+    width: 400px;
+  }
+  .choose-area {
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .Galary-area {
+    padding: 0;
+  }
+  .offer-area {
+    padding: 0 1rem;
   }
 }
