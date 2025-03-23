@@ -65,22 +65,13 @@
   .teacher-area {
     padding: 4rem;
   }
-  .teacher-image img {
-    height: 228px;
-    width: 186px;
-    border-radius: 50px 50px 50px 0;
-  }
+
   /*------------------------why choose area start--------------------------*/
   .choose-area {
     padding: 4rem;
-    flex-direction: column;
   }
   .choose-pic {
     margin-top: 2rem;
-  }
-  .choose-pic img {
-    height: 755px;
-    width: 686px;
   }
   /*-----------------------Galary-area -------------------------*/
   .Galary-area {
@@ -350,10 +341,6 @@
   .teacher-area {
     padding: 3rem 6rem;
   }
-  .teacher-image img {
-    height: 378px;
-    width: 306px;
-  }
   .All-Teachers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -362,17 +349,16 @@
   /*------------------------why choose area start--------------------------*/
   .choose-area {
     padding: 3rem 6rem;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  .choose-details {
+    padding-right: 0;
   }
   .choose-items {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .choose-pic {
     margin-top: 2rem;
-  }
-  .choose-pic img {
-    height: 557px;
-    width: 506px;
   }
   .Galary-area {
     padding: 5rem;
@@ -475,10 +461,6 @@
   .teacher-title {
     width: 100%;
   }
-  .teacher-image img {
-    height: 500px;
-    width: 400px;
-  }
   .All-Teachers {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -488,15 +470,14 @@
     padding: 6rem;
     flex-direction: column;
   }
+  .choose-details {
+    padding-right: 0;
+  }
   .choose-items {
     grid-template-columns: repeat(1, 1fr);
   }
   .choose-pic {
     margin-top: 2rem;
-  }
-  .choose-pic img {
-    height: 485px;
-    width: 438px;
   }
   .Galary-area {
     padding: 5rem;
@@ -534,10 +515,6 @@
   }
   .teacher-area {
     padding: 3rem 1rem;
-  }
-  .teacher-image img {
-    height: 500px;
-    width: 400px;
   }
   .choose-area {
     padding: 1rem;

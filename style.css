@@ -66,13 +66,13 @@ header a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
-  margin: 0 1rem;
+
   font-weight: bolder;
 }
 header .btn-1 {
   background-color: rgb(3, 196, 3);
   color: rgb(255, 255, 255);
-  margin: 0 1.5rem;
+
   padding: 0.5rem 1rem;
   border-radius: 5px;
   font-weight: bolder;
@@ -982,9 +982,13 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 .teacher-image {
   position: relative;
 }
-.teacher-image img {
-  height: 302px;
-  width: 246px;
+.image-teacher {
+  height: 100%;
+  width: 100%;
+}
+.image-teacher img {
+  height: 100%;
+  width: 100%;
   border-radius: 50px 50px 50px 0;
 }
 .teacher-details {
@@ -1026,8 +1030,8 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   background: #012758;
   z-index: 1;
   padding: 5rem;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
 }
 .choose-area::before {
   content: "";
@@ -1041,7 +1045,7 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
   z-index: -1;
 }
 .choose-details {
-  padding-right: 5.5rem;
+  padding-right: 3rem;
 }
 .choose-details .head-title,
 .choose-details .desc {
@@ -1083,12 +1087,14 @@ main .navbar-3 .nav-menu ul .Academics:hover .Academics-menu {
 }
 /*-----------------------choose-pic -------------------------*/
 .choose-pic img {
-  height: 579px;
-  width: 526px;
+  height: 100%;
+  width: 100%;
   border-radius: 30% 0 30% 30%;
   position: relative;
 }
 .choose-pic {
+  height: 100%;
+  width: 100%;
   position: relative;
 }
 .choose-pic:before {
