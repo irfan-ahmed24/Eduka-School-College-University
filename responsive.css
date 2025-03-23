@@ -24,19 +24,6 @@
   .area-container {
     width: 100%;
   }
-
-  .image-left .img-1 {
-    height: 309px;
-    width: 206px;
-  }
-  .image-right .img-2 {
-    height: 186px;
-    width: 186px;
-  }
-  .image-right .img-3 {
-    height: 247px;
-    width: 206px;
-  }
   /*--------------about-right start----------------------*/
   .about-right {
     padding: 3rem 0;
@@ -69,19 +56,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
   }
-  .course-image img {
-    height: 175px;
-    width: 260px;
-  }
   /*---------------------------video-aera-------------------*/
   .video-aera {
     margin: 3rem 4rem;
     grid-template-columns: 1fr 1fr;
-  }
-  .video {
-    margin-left: 0;
-    height: 350px;
-    width: 615px;
   }
   /*----------------------------teacher-area-------------------*/
   .teacher-area {
@@ -339,18 +317,6 @@
     width: 100%;
     grid-template-columns: 1fr;
   }
-  .image-left .img-1 {
-    height: 489px;
-    width: 326px;
-  }
-  .image-right .img-2 {
-    height: 326px;
-    width: 326px;
-  }
-  .image-right .img-3 {
-    height: 391px;
-    width: 326px;
-  }
   /*-------------counter-area start----------------*/
   .counter-area {
     padding: 4rem 2rem;
@@ -371,14 +337,14 @@
   .course-item {
     grid-template-columns: 1fr 1fr;
   }
-  .course-image img {
-    height: 220px;
-    width: 330px;
-  }
   /*---------------------------video-aera-------------------*/
   .video-aera {
     margin: 3rem 6rem;
     grid-template-columns: 1fr;
+  }
+  .video {
+    height: 300px;
+    width: 100%;
   }
   /*----------------------------teacher-area-------------------*/
   .teacher-area {
@@ -476,18 +442,7 @@
     grid-template-columns: 1fr;
     padding: 0;
   }
-  .image-left .img-1 {
-    height: 600px;
-    width: 400px;
-  }
-  .image-right .img-2 {
-    height: 400px;
-    width: 400px;
-  }
-  .image-right .img-3 {
-    height: 480px;
-    width: 400px;
-  }
+
   .both-site {
     grid-template-columns: 1fr;
   }
@@ -503,18 +458,16 @@
   .course-item {
     grid-template-columns: 1fr;
   }
-  .course-image img {
-    height: 317px;
-    width: 476px;
-  }
   /*---------------------------video-aera-------------------*/
   .video-aera {
-    margin: 3rem 6rem;
     grid-template-columns: 1fr;
   }
-  .video {
-    height: 250px;
-    width: 516px;
+  .video-image {
+    background: url("./pic/video-image.jpg") no-repeat center/cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px 50px 50px 0;
+    position: relative;
   }
   .teacher-area {
     padding: 3rem 6rem;
@@ -575,17 +528,9 @@
   .Course-area {
     padding: 1rem;
   }
-  .course-image img {
-    height: 264px;
-    width: 396px;
-  }
   .video-aera {
     margin: 3rem 1rem;
     grid-template-columns: 1fr;
-  }
-  .video {
-    height: 200px;
-    width: 416px;
   }
   .teacher-area {
     padding: 3rem 1rem;
