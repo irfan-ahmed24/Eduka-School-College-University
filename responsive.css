@@ -80,8 +80,20 @@
   .offer-area {
     padding: 0 4rem;
   }
+  /*-----------------------upcoming-event---------------*/
+  .upcoming-event-area {
+    padding: 4rem 4rem 10rem 4rem;
+  }
   /*--------------------enrooll area-------------------*/
   .enroll-area {
+    padding: 4rem;
+  }
+  /*-----------------------depertment-area start-------------------*/
+  .department-area {
+    padding: 4rem;
+  }
+  /*----------------------- testimonial-area start-------------------*/
+  .testimonial-area {
     padding: 4rem;
   }
   /*----------------------- Our blog-area start-------------------*/
@@ -372,6 +384,13 @@
   .offer {
     width: 100%;
   }
+  /*-----------------------upcoming-event---------------*/
+  .upcoming-event-area {
+    padding: 6rem;
+  }
+  .upcoming-title {
+    width: 100%;
+  }
   /*--------------------enrooll area-------------------*/
   .enroll-area {
     padding: 6rem;
@@ -385,6 +404,20 @@
   .skills {
     width: 100%;
     margin-top: 1rem;
+  }
+  /*-----------------------depertment-area start-------------------*/
+  .department-area {
+    padding: 6rem;
+  }
+  .department-title {
+    width: 100%;
+  }
+  /*----------------------- testimonial-area start-------------------*/
+  .testimonial-area {
+    padding: 6rem;
+  }
+  .testimonial-title {
+    width: 100%;
   }
   /*----------------------- Our blog-area start-------------------*/
   .Blog-title {
@@ -526,7 +559,21 @@
   .offer-area {
     padding: 0 1rem;
   }
+  /*-----------------------upcoming-event---------------*/
+  .upcoming-event-area {
+    padding: 3rem 1rem;
+  }
   .enroll-area {
+    padding: 1rem;
+  }
+  /*-----------------------depertment-area start-------------------*/
+  .department-area {
+    padding: 1rem;
+  }
+  .department-title {
+    width: 100%;
+  }
+  .testimonial-area {
     padding: 1rem;
   }
   .Blog-area {
@@ -540,5 +587,9 @@
   }
   .footer-links {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-area .footer-bg {
+    height: 150px;
+    width: 150px;
   }
 }
