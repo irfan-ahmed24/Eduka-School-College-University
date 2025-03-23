@@ -1443,6 +1443,7 @@ textarea {
   position: relative;
   background-color: #ffffff;
   border-radius: 50px 50px 50px 0;
+  width: 100%;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2), -1px -1px 20px rgba(0, 0, 0, 0.2);
   padding: 25px;
 }
@@ -1457,17 +1458,46 @@ textarea {
   z-index: 1;
 }
 .blog-image {
+  width: 100%;
+  height: 220px;
   overflow: hidden;
   border-radius: 50px 50px 50px 0;
 }
 
 .blog-image img {
-  width: 336px;
-  height: 224px;
+  width: 100%;
+  height: 100%;
   transition: all 0.5s;
 }
-.blog-image img:hover {
+.blog-item:hover img {
   transform: scale(1.1);
+}
+.comment {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: #dfdddb 1px solid;
+}
+.comment p {
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s;
+}
+.comment p i {
+  color: #fda31b;
+}
+.comment p:hover {
+  color: #fda31b;
+}
+.blog-details h3 {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.blog-details h3:hover {
+  color: #fda31b;
 }
 /*-----------------------logo area------------------------------*/
 .logo-area {
@@ -1479,12 +1509,12 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-x: auto;
 }
 .logo-item img {
   height: 110px;
   width: 138px;
 }
-
 /*-----------------------footer area------------------------------*/
 
 .footer-area {

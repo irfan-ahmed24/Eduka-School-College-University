@@ -111,6 +111,21 @@
   .offer-area {
     padding: 0 4rem;
   }
+  /*--------------------enrooll area-------------------*/
+  .enroll-area {
+    padding: 4rem;
+  }
+  /*----------------------- Our blog-area start-------------------*/
+  .Blog-area {
+    padding: 4rem;
+  }
+  .logo-area {
+    padding: 3rem 4rem;
+  }
+  /*-----------------------footer area------------------------------*/
+  .footer-area {
+    padding: 4rem 4rem 0 4rem;
+  }
 }
 @media screen and (max-width: 992px) {
   main .navbar-2 {
@@ -405,6 +420,40 @@
   .offer {
     width: 100%;
   }
+  /*--------------------enrooll area-------------------*/
+  .enroll-area {
+    padding: 6rem;
+  }
+  .enroll-container {
+    display: block;
+  }
+  .enrollment-form {
+    width: 100%;
+  }
+  .skills {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  /*----------------------- Our blog-area start-------------------*/
+  .Blog-title {
+    width: 100%;
+  }
+  .Blog-area {
+    padding: 6rem;
+  }
+  .blog-post {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logo-area {
+    padding: 3rem 6rem;
+  }
+  /*-----------------------footer area------------------------------*/
+  .footer-area {
+    padding: 4rem 6rem 0 6rem;
+  }
+  .footer-container {
+    grid-template-columns: 3fr 4fr;
+  }
 }
 @media screen and (max-width: 768px) {
   .owl-item {
@@ -506,6 +555,15 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  .blog-post {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .logo-area {
+    padding: 3rem 5rem;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (max-width: 520px) {
   .owl-item {
@@ -545,5 +603,20 @@
   }
   .offer-area {
     padding: 0 1rem;
+  }
+  .enroll-area {
+    padding: 1rem;
+  }
+  .Blog-area {
+    padding: 1rem;
+  }
+  .logo-area {
+    padding: 1rem;
+  }
+  .footer-area {
+    padding: 3rem 1rem 0 1rem;
+  }
+  .footer-links {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
